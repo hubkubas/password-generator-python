@@ -10,4 +10,4 @@ User chooses:
 - if Capital letters
 - if special signs ie !@#$% etc
 
-the generated password could look like this: "$aDsdasERdad#das#$"
+the generated password could look like this: $aDsdasERdad#das#$
