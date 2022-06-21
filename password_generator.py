@@ -2,13 +2,30 @@
 # czy ma mieć liczby
 # czy ma mieć duże litery
 # czy ma mieć znaki specjalne
+# 
+#   duze_litery = input("Czy mają być uwzględnione DUŻE litery?: ")
+  
+#   znaki_specjalne = input("Czy mają być uwzględnione ZNAKI specjalne?: ")
+  
+#   print("Hasło ma mieć ", liczba_znakow, " znaków.")
 import random
 
-special = '[(_:/,#%\=@$)]'
+#losowe losowanie danej liczby znaków z większego zakresu znaków
+liczba = int(input("wstaw liczbę: "))
+print(liczba)
+test = random.sample(range(0, 9), liczba)
+print(test)
 
-random_numer = random.randint(0,11)
+#ilość znaków specjalnych 32 ostatni to ]
+special_signs = '[`~!@#$%^&*()_-+={[}|\:;"<,>.?/]' 
 
-wybor = special[random_numer]
+print(special_signs[31])
+
+print(len(special_signs))
+
+random_number = random.randint(0,31)
+
+wybor = special_signs[random_number]
 
 print(wybor)
 
@@ -21,8 +38,3 @@ print(wybor)
 #     print("Następnym razem - wpisz liczbę")
 #     continue
   
-#   duze_litery = input("Czy mają być uwzględnione DUŻE litery?: ")
-  
-#   znaki_specjalne = input("Czy mają być uwzględnione ZNAKI specjalne?: ")
-  
-#   print("Hasło ma mieć ", liczba_znakow, " znaków.")
