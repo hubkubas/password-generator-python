@@ -8,6 +8,8 @@
 #   znaki_specjalne = input("Czy mają być uwzględnione ZNAKI specjalne?: ")
   
 #   print("Hasło ma mieć ", liczba_znakow, " znaków.")
+# Hasło może zawierać tylko litery, cyfry oraz: !#%&()*+,-.:;=?@[]^_{|}~ Twoje hasło musi zawierać znak specjalny.
+
 import random
 
 #losowe losowanie danej liczby znaków z większego zakresu znaków
@@ -17,9 +19,9 @@ test = random.sample(range(0, 9), liczba)
 print(test)
 
 #ilość znaków specjalnych 32 ostatni to ]
-special_signs = '[`~!@#$%^&*()_-+={[}|\:;"<,>.?/]' 
+special_signs = '#%&$()*+,-.:;=?@[]^_{|}~' 
 
-print(special_signs[31])
+print(special_signs[23])
 
 print(len(special_signs))
 
