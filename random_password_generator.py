@@ -23,16 +23,16 @@ special_signs = '#%&$()*+,-.:;=?@[]^_{|}~'
 special_signs = random.sample(special_signs, 23)
 
 # here all elements are added together
-wynik = random_digits + random_lowercase_letters + random_uppercase_letters + special_signs
+password = random_digits + random_lowercase_letters + random_uppercase_letters + special_signs
 
 # here all elements are shuffled
-random.shuffle(wynik)
+random.shuffle(password)
 
 # here all commas and brackets are removed
-wynik = ''.join(map(str, wynik))
+password = ''.join(map(str, password))
 
 # here is the result
-print(wynik[0:int(length)])
+print(password[0:int(length)])
 
 
 
