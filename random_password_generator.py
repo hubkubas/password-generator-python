@@ -17,7 +17,7 @@ random_lowercase_letters = random.sample(string.ascii_lowercase, 25)
 random_uppercase_letters = random.sample(string.ascii_uppercase, 25)
 
 # here the special signs eg.#$%@
-special_signs = '#%&$()*+,-.:;=?@[]^_{|}~'
+special_signs = "#%&$()*+,-.:;=?@[]^_{|}~"
 
 # here the special signs are chosen
 special_signs = random.sample(special_signs, 23)
@@ -32,7 +32,7 @@ random.shuffle(password)
 password = ''.join(map(str, password))
 
 # here is the result
-print(password[0:int(length)])
+print(f'{password[0:int(length)]}')
 
 
 
